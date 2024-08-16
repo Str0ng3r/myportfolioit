@@ -8,7 +8,9 @@ export default defineNuxtConfig({
       }
     }
   },
-
+  plugins: [
+    { src: '~/plugins/aos.js', mode: 'client' },
+  ],
   imports: {
     dirs: ['types/constants'],
     presets: [

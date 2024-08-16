@@ -26,100 +26,139 @@ const projects = [
 <template>
 	<section class="about">
 		<div class="container_wrap about_wrap">
-			<img class="avatarka" src="../assets/img/profile_img.jpg" alt="avatar" />
-			<h2 class="title_about">
+			<img
+				class="avatarka"
+				src="../assets/img/profile_img.jpg"
+				alt="avatar"
+				data-aos="fade-down"
+			/>
+			<h2 class="title_about" data-aos="fade-up">
 				I write code <span> quickly </span> <br />
 				and <span> professionally!</span>
 			</h2>
-			<p class="about_desc">
+			<p class="about_desc" data-aos="fade-up">
 				I am a Front-end developer over 2 years of professional experience,
 				specializing in frontend development. I am good at understanding the
 				principles of front-end work, as well as writing pages and components
 				quickly.
 			</p>
 			<div class="wrap_buttons">
-				<button class="touch_button">Get In Touch</button>
-				<button class="download_button">Download CV</button>
+				<button class="touch_button" data-aos="fade-right">Get In Touch</button>
+				<button class="download_button" data-aos="fade-left">
+					Download CV
+				</button>
 			</div>
 		</div>
 	</section>
 	<section class="expirience">
 		<div class="container_wrap exp_wrap">
-			<h2 class="exp_title">EXPERIENCE WITH</h2>
+			<h2 class="exp_title" data-aos="fade-up">EXPERIENCE WITH</h2>
 			<ul class="list_frames">
-				<nuxt-icon name="javascript" filled class="exp_icon"></nuxt-icon>
-				<nuxt-icon name="html" filled class="exp_icon"></nuxt-icon>
-				<nuxt-icon name="css" filled class="exp_icon"></nuxt-icon>
-				<nuxt-icon name="reactjs" filled class="exp_icon"></nuxt-icon>
-				<nuxt-icon name="vue" filled class="exp_icon"></nuxt-icon>
-				<nuxt-icon name="nuxt" filled class="exp_icon"></nuxt-icon>
+				<nuxt-icon
+					name="javascript"
+					filled
+					class="exp_icon"
+					data-aos="fade-right"
+				></nuxt-icon>
+				<nuxt-icon
+					name="html"
+					filled
+					class="exp_icon"
+					data-aos="fade-right"
+				></nuxt-icon>
+				<nuxt-icon
+					name="css"
+					filled
+					class="exp_icon"
+					data-aos="fade-right"
+				></nuxt-icon>
+				<nuxt-icon
+					name="reactjs"
+					filled
+					class="exp_icon"
+					data-aos="fade-left"
+				></nuxt-icon>
+				<nuxt-icon
+					name="vue"
+					filled
+					class="exp_icon"
+					data-aos="fade-left"
+				></nuxt-icon>
+				<nuxt-icon
+					name="nuxt"
+					filled
+					class="exp_icon"
+					data-aos="fade-left"
+				></nuxt-icon>
 			</ul>
 		</div>
 	</section>
 	<section class="projects">
 		<div class="container_wrap projects_wrap">
-			<h2 class="title_projects">PROJECTS</h2>
+			<h2 class="title_projects" data-aos="fade-down">PROJECTS</h2>
 			<div class="wrap_projects_cards">
 				<CardProject
 					:desc="'Vue,NUXT'"
 					:link="'https://ildconsulting.netlify.app/'"
 					:header-txt="'Consulting'"
 					class="consult_proj"
+					data-aos="fade-right"
 				></CardProject>
 				<CardProject
 					:desc="'Vue,NUXT'"
 					:link="'https://earth.devbazu.com/uk'"
 					:header-txt="'Earth-Social'"
 					class="earth_proj"
+					data-aos="fade-left"
 				></CardProject>
 				<CardProject
 					:desc="'Vue,NUXT'"
 					:link="'https://og.movie/'"
 					:header-txt="'OG-movie'"
 					class="og_proj"
+					data-aos="fade-right"
 				></CardProject>
 				<CardProject
 					:desc="'JavaScript,SCSS,HTML'"
 					:link="'https://mxm-kotyk.github.io/team-project-icecream/'"
 					:header-txt="'Ice-Cream AD'"
 					class="ice_proj"
+					data-aos="fade-left"
 				></CardProject>
 				<CardProject
 					:desc="'React,JavaScript'"
 					:link="'https://romarionik.github.io/task-pro-team-project/'"
 					:header-txt="'Task-Pro'"
 					class="task_proj"
+					data-aos="fade-right"
 				></CardProject>
 				<CardProject
 					:desc="'JavaScript,SCSS,HTML'"
 					:link="'https://romarionik.github.io/filmoteka-team-project/'"
 					:header-txt="'Film-library'"
 					class="film_proj"
+					data-aos="fade-left"
 				></CardProject>
 				<CardProject
 					:desc="'JavaScript,CSS,HTML'"
 					:link="'https://str0ng3r.github.io/AUTOMAX-GORZOW/'"
 					:header-txt="'AUTOMAX-lending'"
 					class="auto_proj"
+					data-aos="fade-right"
 				></CardProject>
 				<CardProject
 					:desc="'React,CSS,HTML'"
 					:link="'https://str0ng3r.github.io/planeta_znizok/'"
 					:header-txt="'Olaf-lending'"
 					class="olaf_proj"
+					data-aos="fade-left"
 				></CardProject>
-				<!-- <a class="card" href="https://ildconsulting.netlify.app/">
-					<div class="textBox">
-						<p class="text head">Consulting</p>
-						<span>Vue.js , NUXT</span>
-					</div>
-				</a> -->
 			</div>
 		</div>
 	</section>
 	<section class="work_exp">
 		<div class="container_wrap work_wrap">
-			<h2 class="title_work_exp">EXPIRIENCE</h2>
+			<h2 class="title_work_exp" data-aos="fade-down">EXPIRIENCE</h2>
 		</div>
 	</section>
 </template>

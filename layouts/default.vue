@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-	<header>
+	<header data-aos="fade-down">
 		<div class="container_wrap header_wrapper">
 			<img class="logotipe" src="../assets/img/logo.png" alt="logo" />
 			<nav class="nav_wrap">
