@@ -1,4 +1,27 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const projects = [
+	{
+		link: "https://ildconsulting.netlify.app/",
+		headerTxt: "Consulting",
+		desc: "Vue,NUXT",
+	},
+	{
+		link: "https://ildconsulting.netlify.app/",
+		headerTxt: "Consulting",
+		desc: "Vue,NUXT",
+	},
+	{
+		link: "https://ildconsulting.netlify.app/",
+		headerTxt: "Consulting",
+		desc: "Vue,NUXT",
+	},
+	{
+		link: "https://ildconsulting.netlify.app/",
+		headerTxt: "Consulting",
+		desc: "Vue,NUXT",
+	},
+];
+</script>
 
 <template>
 	<section class="about">
@@ -11,13 +34,92 @@
 			<p class="about_desc">
 				I am a Front-end developer over 2 years of professional experience,
 				specializing in frontend development. I am good at understanding the
-				principles of front-end work,  as well as writing pages and components
+				principles of front-end work, as well as writing pages and components
 				quickly.
 			</p>
 			<div class="wrap_buttons">
 				<button class="touch_button">Get In Touch</button>
 				<button class="download_button">Download CV</button>
 			</div>
+		</div>
+	</section>
+	<section class="expirience">
+		<div class="container_wrap exp_wrap">
+			<h2 class="exp_title">EXPERIENCE WITH</h2>
+			<ul class="list_frames">
+				<nuxt-icon name="javascript" filled class="exp_icon"></nuxt-icon>
+				<nuxt-icon name="html" filled class="exp_icon"></nuxt-icon>
+				<nuxt-icon name="css" filled class="exp_icon"></nuxt-icon>
+				<nuxt-icon name="reactjs" filled class="exp_icon"></nuxt-icon>
+				<nuxt-icon name="vue" filled class="exp_icon"></nuxt-icon>
+				<nuxt-icon name="nuxt" filled class="exp_icon"></nuxt-icon>
+			</ul>
+		</div>
+	</section>
+	<section class="projects">
+		<div class="container_wrap projects_wrap">
+			<h2 class="title_projects">PROJECTS</h2>
+			<div class="wrap_projects_cards">
+				<CardProject
+					:desc="'Vue,NUXT'"
+					:link="'https://ildconsulting.netlify.app/'"
+					:header-txt="'Consulting'"
+					class="consult_proj"
+				></CardProject>
+				<CardProject
+					:desc="'Vue,NUXT'"
+					:link="'https://earth.devbazu.com/uk'"
+					:header-txt="'Earth-Social'"
+					class="earth_proj"
+				></CardProject>
+				<CardProject
+					:desc="'Vue,NUXT'"
+					:link="'https://og.movie/'"
+					:header-txt="'OG-movie'"
+					class="og_proj"
+				></CardProject>
+				<CardProject
+					:desc="'JavaScript,SCSS,HTML'"
+					:link="'https://mxm-kotyk.github.io/team-project-icecream/'"
+					:header-txt="'Ice-Cream AD'"
+					class="ice_proj"
+				></CardProject>
+				<CardProject
+					:desc="'React,JavaScript'"
+					:link="'https://romarionik.github.io/task-pro-team-project/'"
+					:header-txt="'Task-Pro'"
+					class="task_proj"
+				></CardProject>
+				<CardProject
+					:desc="'JavaScript,SCSS,HTML'"
+					:link="'https://romarionik.github.io/filmoteka-team-project/'"
+					:header-txt="'Film-library'"
+					class="film_proj"
+				></CardProject>
+				<CardProject
+					:desc="'JavaScript,CSS,HTML'"
+					:link="'https://str0ng3r.github.io/AUTOMAX-GORZOW/'"
+					:header-txt="'AUTOMAX-lending'"
+					class="auto_proj"
+				></CardProject>
+				<CardProject
+					:desc="'React,CSS,HTML'"
+					:link="'https://str0ng3r.github.io/planeta_znizok/'"
+					:header-txt="'Olaf-lending'"
+					class="olaf_proj"
+				></CardProject>
+				<!-- <a class="card" href="https://ildconsulting.netlify.app/">
+					<div class="textBox">
+						<p class="text head">Consulting</p>
+						<span>Vue.js , NUXT</span>
+					</div>
+				</a> -->
+			</div>
+		</div>
+	</section>
+	<section class="work_exp">
+		<div class="container_wrap work_wrap">
+			<h2 class="title_work_exp">EXPIRIENCE</h2>
 		</div>
 	</section>
 </template>
@@ -32,6 +134,130 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.title_work_exp {
+	font-family: Poppins;
+	font-size: 3.5rem;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 3.5748rem; /* 102.137% */
+	text-transform: uppercase;
+	background: linear-gradient(180deg, #5badff 0%, #1373d1 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 6.1rem;
+}
+.earth_proj {
+	background: url("../assets/img/earthproj.jpg") lightgray 50% / cover no-repeat !important;
+}
+.olaf_proj {
+	background: url("../assets/img/olafproj.jpg") lightgray 50% / cover no-repeat !important;
+}
+.og_proj {
+	background: url("../assets/img/ogproj.jpg") lightgray 50% / cover no-repeat !important;
+}
+.film_proj {
+	background: url("../assets/img/filmproj.jpg") lightgray 50% / cover no-repeat !important;
+}
+.auto_proj {
+	background: url("../assets/img/autoproj.jpg") lightgray 50% / cover no-repeat !important;
+}
+.ice_proj {
+	background: url("../assets/img/iceproj.jpg") lightgray 50% / cover no-repeat !important;
+}
+.task_proj {
+	background: url("../assets/img/taskproj.jpg") lightgray 50% / cover no-repeat !important;
+}
+.consult_proj {
+	background: url("../assets/img/consultproj.jpg") lightgray 50% / cover
+		no-repeat !important;
+}
+.projects_wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.work_exp {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.work_wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.wrap_projects_cards {
+	width: 100%;
+	max-width: 81rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 3rem;
+	flex-wrap: wrap;
+}
+.title_projects {
+	background: linear-gradient(180deg, #ff8660 0%, #d5491d 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: Poppins;
+	font-size: 3.5rem;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 3.5rem; /* 102.137% */
+	text-transform: uppercase;
+	margin-bottom: 2.7rem;
+}
+.list_frames {
+	width: 100%;
+	gap: 6rem;
+	max-width: 55.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transition: all 0.6s ease-in-out;
+}
+.projects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 9.6rem;
+}
+.exp_icon:hover {
+	transition: all 0.6s ease-in-out;
+	transform: scale(1.3);
+	cursor: pointer;
+}
+.exp_title {
+	color: #c5c5c5;
+	font-family: Poppins;
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 0.24rem;
+	margin-bottom: 5.4rem;
+}
+.exp_wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.expirience {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 8.8rem;
+	margin-bottom: 9.3rem;
 }
 .download_button {
 	background-color: transparent;
