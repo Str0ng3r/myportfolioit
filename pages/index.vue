@@ -163,7 +163,7 @@ const projects = [
 	<section class="work_exp">
 		<div class="container_wrap work_wrap">
 			<h2 class="title_work_exp" data-aos="fade-down" id="work_exp">
-				EXPIRIENCE
+				EXPERIENCE
 			</h2>
 			<div class="wrap_expirience_company" data-aos="fade-down">
 				<p class="wrap_expirience_company__title">
