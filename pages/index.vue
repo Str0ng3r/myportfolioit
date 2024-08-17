@@ -43,10 +43,14 @@ const projects = [
 				quickly.
 			</p>
 			<div class="wrap_buttons">
-				<button class="touch_button" data-aos="fade-right">Get In Touch</button>
-				<button class="download_button" data-aos="fade-left">
+				<a
+					class="download_button"
+					href="/resume.pdf"
+					data-aos="fade-left"
+					download
+				>
 					Download CV
-				</button>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -96,7 +100,7 @@ const projects = [
 	<section class="projects">
 		<div class="container_wrap projects_wrap">
 			<h2 class="title_projects" data-aos="fade-down">PROJECTS</h2>
-			<div class="wrap_projects_cards">
+			<div class="wrap_projects_cards" id="projects">
 				<CardProject
 					:desc="'Vue,NUXT'"
 					:link="'https://ildconsulting.netlify.app/'"
@@ -158,9 +162,72 @@ const projects = [
 	</section>
 	<section class="work_exp">
 		<div class="container_wrap work_wrap">
-			<h2 class="title_work_exp" data-aos="fade-down">EXPIRIENCE</h2>
+			<h2 class="title_work_exp" data-aos="fade-down" id="work_exp">
+				EXPIRIENCE
+			</h2>
+			<div class="wrap_expirience_company" data-aos="fade-down">
+				<p class="wrap_expirience_company__title">
+					Front-end Developer at BAZU company
+					<span>Sept 2024 - July 2024</span>
+				</p>
+				<p class="wrap_expirience_company__desc">
+					Working as a Front-end developer in the company I was engaged in :
+					Creation and support of new web applications, Creation of fully
+					functional pages.Creation of separate overused components,Correction
+					of errors on already created sites and their customization.Adaptation
+					of pages and components for different types of devices ,Connection and
+					customization of new libraries in projects.Translating pages, SEO
+					customization, Meta texts connection,Customize the data structure for
+					the backend.
+				</p>
+			</div>
+			<div class="wrap_expirience_company" data-aos="fade-down">
+				<p class="wrap_expirience_company__title">
+					Front-end Developer at Freelance
+					<span>Sept 2023 - Sept 2024</span>
+				</p>
+				<p class="wrap_expirience_company__desc">
+					Creating custom sites, lendings.admin panels, connecting backend,
+					linking the front-end part with the database.Improving the
+					optimization of the site, solving bugs, creating projects,
+					designs.Setting SEO site for browser.
+				</p>
+			</div>
 		</div>
 	</section>
+	<footer id="contacts">
+		<div class="container_wrap footer_wrapper" data-aos="fade-right">
+			<h2 class="title_footer" data-aos="fade-down">Contacts</h2>
+			<a
+				href="mailto:maksstankevich81@gmail.com"
+				class="soc_link"
+				data-aos="fade-right"
+				><nuxt-icon name="email" class="icon_mail" filled></nuxt-icon
+				>maksstankevich81@gmail.com</a
+			>
+			<a
+				href="https://www.instagram.com/maximilian4ikkk/"
+				class="soc_link"
+				data-aos="fade-right"
+				><nuxt-icon name="instagram" filled></nuxt-icon>@maximilian4ikkk</a
+			>
+			<a
+				href="https://www.linkedin.com/in/maks-stankevich-211391255/"
+				data-aos="fade-right"
+				class="soc_link"
+				><nuxt-icon name="linkedin" filled class="linkedin_icon"></nuxt-icon
+				>Maks Stankevich</a
+			>
+			<a href="tel:+48572882293" class="soc_link" data-aos="fade-right"
+				><nuxt-icon name="phone" filled class="linkedin_icon"></nuxt-icon
+				>+48572882293</a
+			>
+			<a href="tel:+380987520737" class="soc_link"
+				><nuxt-icon name="phone" filled class="linkedin_icon"></nuxt-icon
+				>+380987520737</a
+			>
+		</div>
+	</footer>
 </template>
 
 <style scoped lang="scss">
@@ -173,6 +240,85 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.icon_mail {
+	width: 2rem;
+	height: 2rem;
+}
+.linkedin_icon {
+	max-width: 1.9rem;
+}
+.soc_link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #c5c5c5;
+	font-family: Poppins;
+	font-size: 1.4rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	gap: 0.4rem;
+	padding: 0.2rem;
+}
+footer {
+	padding: 9.4rem 0;
+	background: #191919;
+}
+.title_footer {
+	color: #fff;
+	font-family: Poppins;
+	font-size: 2.3526rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 0.0471rem;
+	margin-bottom: 3.4rem;
+}
+.footer_wrapper {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	gap: 0.6rem;
+}
+.wrap_expirience_company__desc {
+	color: #8491a0;
+	font-family: Poppins;
+	font-size: 1.4494rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 2.174rem */
+	margin-top: 2.3rem;
+}
+.wrap_expirience_company__title {
+	color: #fff;
+	text-align: center;
+	font-family: Poppins;
+	font-size: 2.174rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.wrap_expirience_company__title span {
+	color: #8491a0;
+	text-align: center;
+	font-family: Poppins;
+	font-size: 1.4494rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 2.174rem */
+}
+.wrap_expirience_company {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 5rem;
 }
 .title_work_exp {
 	font-family: Poppins;
@@ -223,6 +369,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding-bottom: 5.3rem;
 }
 .work_wrap {
 	display: flex;

@@ -5,10 +5,9 @@
 		<div class="container_wrap header_wrapper">
 			<img class="logotipe" src="../assets/img/logo.png" alt="logo" />
 			<nav class="nav_wrap">
-				<a href="" class="link_nav">Home</a>
-				<a href="" class="link_nav">Projects</a>
-				<a href="" class="link_nav">Experience</a>
-				<a href="" class="link_nav">Contacts</a>
+				<a href="#projects" class="link_nav">Projects</a>
+				<a href="#work_exp" class="link_nav">Experience</a>
+				<a href="#contacts" class="link_nav">Contacts</a>
 			</nav>
 		</div>
 	</header>
