@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+  
   vite: {
     css: {
       preprocessorOptions: {
@@ -33,14 +34,16 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
+      title: 'Portfolio Maks Stankevych',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: 'Portfolio Maks Stankevich - Frontend Developer' }
+      ],
       link: [
-        {
-          rel: 'icon',
-          type: 'image/x-icon',
-          href: '/favicon/Favicon.ico'
-        }
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
-    }
+    },
   },
 
   compatibilityDate: '2024-08-15',
