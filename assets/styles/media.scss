@@ -1,0 +1,19 @@
+$medium: 818px;
+$tablet: 530px;
+$mob: 400px;
+
+@mixin m {
+  @media only screen and (max-width: #{$medium}) {
+    @content;
+  }
+}
+@mixin t {
+  @media only screen and (max-width: #{$tablet}) {
+    @content;
+  }
+}
+@mixin mob {
+  @media only screen and (max-width: #{$mob}) {
+    @content;
+  }
+}

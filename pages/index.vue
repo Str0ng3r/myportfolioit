@@ -264,6 +264,10 @@ header {
 footer {
 	padding: 9.4rem 0;
 	background: #191919;
+	overflow: hidden;
+	@include m {
+		padding: 8rem 2rem;
+	}
 }
 .title_footer {
 	color: #fff;
@@ -281,6 +285,10 @@ footer {
 	justify-content: flex-start;
 	flex-direction: column;
 	gap: 0.6rem;
+	@include t {
+		align-items: center;
+		justify-content: center;
+	}
 }
 .wrap_expirience_company__desc {
 	color: #8491a0;
@@ -290,6 +298,10 @@ footer {
 	font-weight: 400;
 	line-height: 150%; /* 2.174rem */
 	margin-top: 2.3rem;
+	@include m {
+		margin-top: 1.8rem;
+		font-size: 1.2rem;
+	}
 }
 .wrap_expirience_company__title {
 	color: #fff;
@@ -302,6 +314,12 @@ footer {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	@include m {
+		font-size: 1.8rem;
+	}
+	@include t {
+		text-align: left;
+	}
 }
 .wrap_expirience_company__title span {
 	color: #8491a0;
@@ -311,6 +329,10 @@ footer {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 150%; /* 2.174rem */
+
+	@include m {
+		font-size: 1rem;
+	}
 }
 .wrap_expirience_company {
 	display: flex;
@@ -319,6 +341,9 @@ footer {
 	flex-direction: column;
 	width: 100%;
 	margin-bottom: 5rem;
+	@include t {
+		margin-bottom: 3rem;
+	}
 }
 .title_work_exp {
 	font-family: Poppins;
@@ -332,6 +357,11 @@ footer {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin-bottom: 6.1rem;
+	@include t {
+		font-size: 3rem;
+		line-height: 3rem; /* 102.137% */
+		margin-bottom: 3rem;
+	}
 }
 .earth_proj {
 	background: url("../assets/img/earthproj.jpg") lightgray 50% / cover no-repeat !important;
@@ -370,12 +400,16 @@ footer {
 	align-items: center;
 	justify-content: center;
 	padding-bottom: 5.3rem;
+	overflow: hidden;
 }
 .work_wrap {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	@include m {
+		max-width: 60rem;
+	}
 }
 .wrap_projects_cards {
 	width: 100%;
@@ -385,6 +419,9 @@ footer {
 	align-items: flex-start;
 	gap: 3rem;
 	flex-wrap: wrap;
+	@include m {
+		justify-content: center;
+	}
 }
 .title_projects {
 	background: linear-gradient(180deg, #ff8660 0%, #d5491d 100%);
@@ -398,6 +435,10 @@ footer {
 	line-height: 3.5rem; /* 102.137% */
 	text-transform: uppercase;
 	margin-bottom: 2.7rem;
+	@include t {
+		font-size: 3rem;
+		line-height: 3rem;
+	}
 }
 .list_frames {
 	width: 100%;
@@ -407,6 +448,14 @@ footer {
 	align-items: center;
 	justify-content: space-between;
 	transition: all 0.6s ease-in-out;
+	@include m {
+		gap: 2rem;
+		max-width: 46rem;
+	}
+	@include t {
+		max-width: 34rem;
+		gap: 0.4rem;
+	}
 }
 .projects {
 	display: flex;
@@ -415,6 +464,7 @@ footer {
 	justify-content: center;
 	width: 100%;
 	margin-bottom: 9.6rem;
+	overflow: hidden;
 }
 .exp_icon:hover {
 	transition: all 0.6s ease-in-out;
@@ -444,6 +494,15 @@ footer {
 	justify-content: center;
 	margin-top: 8.8rem;
 	margin-bottom: 9.3rem;
+	overflow: hidden;
+	@include m {
+		margin-top: 7.2rem;
+		margin-bottom: 8.4rem;
+	}
+	@include t {
+		margin-top: 5rem;
+		margin-bottom: 6rem;
+	}
 }
 .download_button {
 	background-color: transparent;
@@ -456,13 +515,23 @@ footer {
 	-webkit-text-stroke-width: 0.3246873915195465;
 	-webkit-text-stroke-color: #000;
 	font-family: Poppins;
-	font-size: 2.138rem;
+	font-size: 2.1rem;
 	font-style: normal;
 	font-weight: 600;
 	line-height: normal;
 	padding: 1.6rem 2.9rem;
 	white-space: nowrap;
 	transition: all 0.6s ease-in-out;
+	@include m {
+		font-size: 1.8rem;
+		max-width: 16rem;
+		padding: 1.2rem 2.5rem;
+	}
+	@include t {
+		font-size: 1.4rem;
+		max-width: 16rem;
+		padding: 1.2rem 2.5rem;
+	}
 }
 .touch_button {
 	border-radius: 5rem;
@@ -499,6 +568,11 @@ footer {
 	justify-content: center;
 	gap: 1.8rem;
 }
+.list_frames:deep(span) {
+	@include m {
+		width: 3rem !important;
+	}
+}
 .about_desc {
 	color: #c5c5c5;
 	text-align: center;
@@ -509,6 +583,13 @@ footer {
 	line-height: normal;
 	letter-spacing: 0.036rem;
 	margin: 5.4rem;
+	@include m {
+		margin: 4rem;
+		font-size: 1.6rem;
+	}
+	@include t {
+		margin: 2rem;
+	}
 }
 .title_about {
 	color: #fff;
@@ -519,6 +600,15 @@ footer {
 	font-weight: 800;
 	line-height: 6.3357rem; /* 115.195% */
 	margin-bottom: 4rem;
+	@include m {
+		font-size: 4rem;
+		margin-bottom: 2rem;
+		line-height: 4rem;
+	}
+	@include t {
+		font-size: 3rem;
+		line-height: 3.2rem;
+	}
 }
 .title_about span {
 	background: linear-gradient(
@@ -535,6 +625,14 @@ footer {
 	font-style: normal;
 	font-weight: 800;
 	line-height: 6.3357rem;
+	@include m {
+		font-size: 4rem;
+		line-height: 4rem;
+	}
+	@include t {
+		font-size: 3rem;
+		line-height: 3.2rem;
+	}
 }
 .about_wrap {
 	display: flex;
@@ -554,6 +652,10 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
+	@include m {
+		padding-top: 6rem;
+	}
 }
 .logotip {
 	font-family: Poppins;

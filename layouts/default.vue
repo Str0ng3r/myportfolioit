@@ -34,6 +34,10 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	gap: 4.44rem;
+	@include t {
+		flex-direction: column;
+		gap: 0.2rem;
+	}
 }
 .link_nav {
 	color: #fff;
@@ -54,6 +58,12 @@ header {
 	justify-content: space-between;
 	display: flex;
 	align-items: center;
+	@include m {
+		padding: 0 2rem;
+	}
+	@include t {
+		max-width: 34rem !important;
+	}
 }
 @keyframes hoverEffect {
 	0% {
