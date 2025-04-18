@@ -1,24 +1,24 @@
 <script lang="ts" setup>
 const projects = [
 	{
-		link: "https://ildconsulting.netlify.app/",
-		headerTxt: "Consulting",
-		desc: "Vue,NUXT",
+		link: 'https://ildconsulting.netlify.app/',
+		headerTxt: 'Consulting',
+		desc: 'Vue,NUXT',
 	},
 	{
-		link: "https://ildconsulting.netlify.app/",
-		headerTxt: "Consulting",
-		desc: "Vue,NUXT",
+		link: 'https://ildconsulting.netlify.app/',
+		headerTxt: 'Consulting',
+		desc: 'Vue,NUXT',
 	},
 	{
-		link: "https://ildconsulting.netlify.app/",
-		headerTxt: "Consulting",
-		desc: "Vue,NUXT",
+		link: 'https://ildconsulting.netlify.app/',
+		headerTxt: 'Consulting',
+		desc: 'Vue,NUXT',
 	},
 	{
-		link: "https://ildconsulting.netlify.app/",
-		headerTxt: "Consulting",
-		desc: "Vue,NUXT",
+		link: 'https://ildconsulting.netlify.app/',
+		headerTxt: 'Consulting',
+		desc: 'Vue,NUXT',
 	},
 ];
 </script>
@@ -110,16 +110,16 @@ const projects = [
 				></CardProject>
 				<CardProject
 					:desc="'Vue,NUXT'"
-					:link="'https://earth.devbazu.com/uk'"
+					:link="'https://dev.thedeya.com/en'"
 					:header-txt="'Earth-Social'"
 					class="earth_proj"
 					data-aos="fade-left"
 				></CardProject>
 				<CardProject
 					:desc="'Vue,NUXT'"
-					:link="'https://og.movie/'"
-					:header-txt="'OG-movie'"
-					class="og_proj"
+					:link="'https://online-psycholog-yanababura.com/'"
+					:header-txt="'Psycholog platform'"
+					class="psych_proj"
 					data-aos="fade-right"
 				></CardProject>
 				<CardProject
@@ -364,28 +364,29 @@ footer {
 	}
 }
 .earth_proj {
-	background: url("../assets/img/earthproj.jpg") lightgray 50% / cover no-repeat !important;
+	background: url('../assets/img/earthproj.jpg') lightgray 50% / cover no-repeat !important;
 }
 .olaf_proj {
-	background: url("../assets/img/olafproj.jpg") lightgray 50% / cover no-repeat !important;
+	background: url('../assets/img/olafproj.jpg') lightgray 50% / cover no-repeat !important;
 }
-.og_proj {
-	background: url("../assets/img/ogproj.jpg") lightgray 50% / cover no-repeat !important;
+.psych_proj {
+	background: url('../assets/img/psychologproj.png') lightgray 50% / cover
+		no-repeat !important;
 }
 .film_proj {
-	background: url("../assets/img/filmproj.jpg") lightgray 50% / cover no-repeat !important;
+	background: url('../assets/img/filmproj.jpg') lightgray 50% / cover no-repeat !important;
 }
 .auto_proj {
-	background: url("../assets/img/autoproj.jpg") lightgray 50% / cover no-repeat !important;
+	background: url('../assets/img/autoproj.jpg') lightgray 50% / cover no-repeat !important;
 }
 .ice_proj {
-	background: url("../assets/img/iceproj.jpg") lightgray 50% / cover no-repeat !important;
+	background: url('../assets/img/iceproj.jpg') lightgray 50% / cover no-repeat !important;
 }
 .task_proj {
-	background: url("../assets/img/taskproj.jpg") lightgray 50% / cover no-repeat !important;
+	background: url('../assets/img/taskproj.jpg') lightgray 50% / cover no-repeat !important;
 }
 .consult_proj {
-	background: url("../assets/img/consultproj.jpg") lightgray 50% / cover
+	background: url('../assets/img/consultproj.jpg') lightgray 50% / cover
 		no-repeat !important;
 }
 .projects_wrap {
