@@ -168,7 +168,7 @@ const projects = [
 			<div class="wrap_expirience_company" data-aos="fade-down">
 				<p class="wrap_expirience_company__title">
 					Front-end Developer at BAZU company
-					<span>Sept 2024 - July 2024</span>
+					<span>Dec 2023 - March 2025</span>
 				</p>
 				<p class="wrap_expirience_company__desc">
 					Working as a Front-end developer in the company I was engaged in :
@@ -184,7 +184,6 @@ const projects = [
 			<div class="wrap_expirience_company" data-aos="fade-down">
 				<p class="wrap_expirience_company__title">
 					Front-end Developer at Freelance
-					<span>Sept 2023 - Sept 2024</span>
 				</p>
 				<p class="wrap_expirience_company__desc">
 					Creating custom sites, lendings.admin panels, connecting backend,
